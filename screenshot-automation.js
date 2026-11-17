@@ -31,3 +31,6 @@ if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
   await browser.close();
   console.log('Tüm ekran görüntüleri başarıyla alındı!');
 })();
+
+
+// vize guncellemesi
