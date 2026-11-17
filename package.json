@@ -1,0 +1,7 @@
+{
+  "name": "takcar",
+  "version": "1.0.0",
+  "devDependencies": {
+    "playwright": "latest"
+  }
+}

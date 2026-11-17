@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>TakCar - Güvenli Araç Kiralama</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        body { background: #07090e; color: #f8fafc; overflow-x: hidden; }
+        
+        header { background: rgba(13, 17, 23, 0.95); backdrop-filter: blur(12px); padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.25rem; font-weight: 800; background: linear-gradient(135deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        nav a { color: #94a3b8; text-decoration: none; margin-left: 1rem; font-weight: 500; font-size: 0.9rem; }
+        nav a:hover, nav a.active { color: #38bdf8; }
+
+        .hero { padding: 3rem 1rem 2rem; text-align: center; background: radial-gradient(circle at center top, rgba(56, 189, 248, 0.12) 0%, transparent 70%); }
+        .hero h1 { font-size: 2rem; margin-bottom: 0.75rem; font-weight: 800; line-height: 1.2; color: #fff; }
+        .hero p { color: #94a3b8; font-size: 0.95rem; margin-bottom: 2rem; line-height: 1.5; padding: 0 0.5rem; }
+
+        /* Mobil Uyumlu Arama Kutusu */
+        .search-box { max-width: 100%; margin: 0 1rem; background: rgba(18, 24, 38, 0.95); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 1rem; padding: 0.85rem; display: flex; flex-direction: column; gap: 0.75rem; box-shadow: 0 15px 35px rgba(0,0,0,0.5); }
+        .search-field { text-align: left; padding: 0.5rem 0.75rem; background: rgba(255,255,255,0.03); border-radius: 0.5rem; border: 1px solid rgba(255,255,255,0.05); }
+        .search-field label { display: block; font-size: 0.7rem; color: #38bdf8; font-weight: 700; text-transform: uppercase; margin-bottom: 0.2rem; }
+        .search-field input { width: 100%; background: transparent; border: none; color: #fff; font-size: 0.9rem; outline: none; }
+        .search-btn { background: linear-gradient(135deg, #38bdf8, #0ea5e9); color: #07090e; padding: 0.75rem; border: none; border-radius: 0.5rem; font-weight: 700; cursor: pointer; width: 100%; }
+
+        .categories { max-width: 100%; margin: 2rem 1rem; display: grid; grid-template-columns: 1fr; gap: 1rem; }
+        .cat-card { background: rgba(18, 24, 38, 0.6); border: 1px solid rgba(255,255,255,0.06); border-radius: 0.85rem; padding: 1.25rem; display: flex; align-items: center; gap: 1rem; }
+        .cat-icon { font-size: 1.75rem; }
+        .cat-title { font-weight: 700; font-size: 0.95rem; margin-bottom: 0.15rem; }
+        .cat-sub { font-size: 0.75rem; color: #94a3b8; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🚗 TakCar</div>
+        <nav>
+            <a href="index.html" class="active">Ana Sayfa</a>
+            <a href="rental.html">Filo</a>
+            <a href="profile.html">Profil</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Şehrin Hızına TakCar ile Uyum Sağla</h1>
+        <p>Dakikalık ve günlük araç kiralama deneyimiyle en konforlu yolculuklar seni bekliyor.</p>
+        
+        <div class="search-box">
+            <div class="search-field">
+                <label>Lokasyon</label>
+                <input type="text" value="Maslak, İstanbul" readonly>
+            </div>
+            <div class="search-field">
+                <label>Süre / Tarife</label>
+                <input type="text" value="Dakikalık / Esnek" readonly>
+            </div>
+            <button class="search-btn" onclick="location.href='rental.html'">Araç Bul</button>
+        </div>
+    </div>
+
+    <div class="categories">
+        <div class="cat-card" onclick="location.href='rental.html'">
+            <div class="cat-icon">⚡</div>
+            <div>
+                <div class="cat-title">Ekonomik Hatcback</div>
+                <div class="cat-sub">Clio & i20 Serisi</div>
+            </div>
+        </div>
+        <div class="cat-card" onclick="location.href='rental.html'">
+            <div class="cat-icon">🏎️</div>
+            <div>
+                <div class="cat-title">Performans & Sedans</div>
+                <div class="cat-sub">BMW E90 & Özel Seri</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

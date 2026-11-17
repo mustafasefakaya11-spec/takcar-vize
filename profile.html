@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>TakCar - Profil</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        body { background: #07090e; color: #f8fafc; }
+        header { background: rgba(13, 17, 23, 0.95); backdrop-filter: blur(12px); padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.25rem; font-weight: 800; background: linear-gradient(135deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        nav a { color: #94a3b8; text-decoration: none; margin-left: 1rem; font-weight: 500; font-size: 0.9rem; }
+        nav a:hover, nav a.active { color: #38bdf8; }
+
+        .container { max-width: 900px; margin: 1.5rem auto; padding: 0 1rem; }
+        .title { font-size: 1.5rem; font-weight: 800; margin-bottom: 1.25rem; }
+        
+        .profile-card { background: rgba(18, 24, 38, 0.85); border: 1px solid rgba(255,255,255,0.07); border-radius: 1rem; padding: 1.5rem; display: flex; flex-direction: column; text-align: center; gap: 1rem; align-items: center; margin-bottom: 1.5rem; }
+        .avatar { width: 75px; height: 75px; background: linear-gradient(135deg, #38bdf8, #818cf8); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; font-weight: 800; color: #07090e; }
+        .info h3 { font-size: 1.2rem; margin-bottom: 0.2rem; color: #fff; }
+        .info p { color: #94a3b8; font-size: 0.85rem; margin-bottom: 0.15rem; word-break: break-all; }
+        .badge { display: inline-block; background: rgba(56, 189, 248, 0.12); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.25); padding: 0.25rem 0.7rem; border-radius: 2rem; font-size: 0.75rem; font-weight: 700; margin-top: 0.5rem; }
+
+        .section-box { background: rgba(18, 24, 38, 0.85); border: 1px solid rgba(255,255,255,0.07); border-radius: 1rem; padding: 1.25rem; }
+        .section-box h4 { margin-bottom: 1rem; color: #38bdf8; font-size: 1rem; font-weight: 700; }
+        
+        .history-item { display: flex; justify-content: space-between; align-items: center; padding: 0.85rem 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .history-item:last-child { border-bottom: none; }
+        .car-name { font-weight: 600; color: #f8fafc; font-size: 0.9rem; }
+        .car-meta { font-size: 0.75rem; color: #94a3b8; margin-top: 0.15rem; }
+        .ride-stats { text-align: right; font-size: 0.85rem; color: #38bdf8; font-weight: 700; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">🚗 TakCar</div>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="rental.html">Filo</a>
+            <a href="profile.html" class="active">Profil</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="title">Hesap Bilgileri</h2>
+        
+        <div class="profile-card">
+            <div class="avatar">MK</div>
+            <div class="info">
+                <h3>Mustafa Kaya</h3>
+                <p>mustafa@istinye.edu.tr</p>
+                <p>İstinye Üniversitesi - Bilgisayar Programcılığı</p>
+                <div class="badge">Stajyer Ehliyet Onaylı ✓</div>
+            </div>
+        </div>
+
+        <div class="section-box">
+            <h4>Geçmiş Kiralamalar</h4>
+            <div class="history-item">
+                <div>
+                    <div class="car-name">Renault Clio 1.0 TCe</div>
+                    <div class="car-meta">Maslak • 2 gün önce</div>
+                </div>
+                <div class="ride-stats">45 dk<br>₺540</div>
+            </div>
+            <div class="history-item">
+                <div>
+                    <div class="car-name">Hyundai i20 1.0</div>
+                    <div class="car-meta">Vadi İstanbul</div>
+                </div>
+                <div class="ride-stats">75 dk<br>₺1,012</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
